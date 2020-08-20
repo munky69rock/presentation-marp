@@ -1,0 +1,79 @@
+/* @theme colla */
+
+@import "default";
+
+:root {
+  --body-color: #246;
+  --heading-color: #246;
+  font-family: "Avenir Next";
+}
+
+section {
+  background-image: url("../images/colla/bg.png");
+  background-size: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  background-blend-mode: lighten;
+}
+
+h1 strong {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: var(--heading-color);
+}
+
+/* Container */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.spread {
+  column-count: 2;
+}
+
+/* Utility */
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.img-circle img {
+  border-radius: 50%;
+}
+
+.small {
+  font-size: 70%;
+}
+
+.text-gray {
+  color: #999;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}

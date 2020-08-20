@@ -1,0 +1,19 @@
+{
+  "name": "marp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Masayuki Uehara <munky69rock@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.20.0",
+    "@marp-team/marp-core": "^1.2.2",
+    "markdown-it-container": "^3.0.0"
+  },
+  "dependencies": {
+    "@marp-team/marpit": "^1.6.2"
+  },
+  "scripts": {
+    "start": "marp --server -I ./",
+    "build": "marp --pdf --allow-local-files"
+  }
+}

@@ -15,7 +15,7 @@ list_all() {
 
 cd "$root_dir"
 yarn marp
-yarn marp --pdf --allow-local-files
+# yarn marp --pdf --allow-local-files
 
 # 画像のパスを差し替え
 rsync -avz images/ public/images/

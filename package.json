@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "marp --server -I ./",
-    "build": "marp --pdf --allow-local-files"
+    "build": "marp --pdf --allow-local-files",
+    "gh-pages": "./bin/build-gh-pages.sh"
   }
 }

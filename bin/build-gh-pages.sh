@@ -19,6 +19,7 @@ yarn marp
 
 # 画像のパスを差し替え
 rsync -avz images/ public/images/
+rsync -avz CNAME public/CNAME
 
 $sed -i 's/"\.\//"..\//g' $(list_html)
 

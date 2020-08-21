@@ -7,7 +7,8 @@
   "devDependencies": {
     "@marp-team/marp-cli": "^0.20.0",
     "@marp-team/marp-core": "^1.2.2",
-    "markdown-it-container": "^3.0.0"
+    "markdown-it-container": "^3.0.0",
+    "mustache": "^4.0.1"
   },
   "dependencies": {
     "@marp-team/marpit": "^1.6.2"

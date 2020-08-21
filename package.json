@@ -7,8 +7,9 @@
   "devDependencies": {
     "@marp-team/marp-cli": "^0.20.0",
     "@marp-team/marp-core": "^1.2.2",
+    "ejs": "^3.1.5",
     "markdown-it-container": "^3.0.0",
-    "mustache": "^4.0.1"
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@marp-team/marpit": "^1.6.2"
@@ -16,6 +17,7 @@
   "scripts": {
     "start": "marp --server -I ./",
     "build": "marp --pdf --allow-local-files",
+    "clean": "rimraf 'public/**/*'",
     "gh-pages": "./bin/build-gh-pages.sh"
   }
 }

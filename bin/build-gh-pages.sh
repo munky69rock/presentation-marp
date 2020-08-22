@@ -25,9 +25,6 @@ $sed -i \
   's#</head>#<script src="https://cdn.jsdelivr.net/npm/@marp-team/marpit-svg-polyfill/lib/polyfill.browser.js"></script></head>#' \
   $(list_html)
 
-# CNAME設定
-rsync -avzq CNAME public/CNAME
-
 # index.htmlの作成
 slides=$(
   list_all | \

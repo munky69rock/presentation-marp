@@ -15,13 +15,18 @@ list_all() {
 
 cd "$root_dir"
 yarn marp
-# yarn marp --pdf --allow-local-files
 
 # 画像のパスを差し替え
-rsync -avz images/ public/images/
-rsync -avz CNAME public/CNAME
-
+rsync -avzq images/ public/images/
 $sed -i 's/"\.\//"..\//g' $(list_html)
+
+# iOS用のpolyfillをinject (https://github.com/marp-team/marpit-svg-polyfill)
+$sed -i \
+  's#</body></html>#<script src="https://cdn.jsdelivr.net/npm/@marp-team/marpit-svg-polyfill/lib/polyfill.browser.js"></script></body></html>#' \
+  $(list_html)
+
+# CNAME設定
+rsync -avzq CNAME public/CNAME
 
 # index.htmlの作成
 slides=$(

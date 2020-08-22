@@ -17,9 +17,6 @@
       <% slides.forEach(path => { %>
       <li>
         <a href="<%= path %>"><%= path %></a>
-        <% if (path.endsWith("html")) { %>
-          (PC Only)
-        <% } %>
       </li>
       <% }); %>
     </ul>

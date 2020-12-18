@@ -10,7 +10,7 @@ list_html() {
 }
 
 list_all() {
-  find public -type f -name "*.pdf" -o -name "*.html"
+  find public -type f -name "*.pdf" -o -name "*.html" | sort -r
 }
 
 replace_image_path() {

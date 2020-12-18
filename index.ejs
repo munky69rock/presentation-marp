@@ -17,8 +17,8 @@
       <% slides.forEach(path => { %>
       <li>
         <a href="<%= path %>"><%= path %></a>
+        <% if (path.endsWith(".html")) { %> (Desktop Only) <% } %> <% }); %>
       </li>
-      <% if (path.endsWith(".html")) { %> (Desktop Only) <% } %> <% }); %>
     </ul>
   </body>
 </html>
